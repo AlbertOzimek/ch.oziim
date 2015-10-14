@@ -1,0 +1,289 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "../bower_components/fontawesome/css/font-awesome.min.css";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "icons.scss";
+@import "unify/unify.scss";
+
+$red: rgb(255,38,0);
+$red-bg: rgb(255,83,66);
+$grey-dark: #708090;
+$grey: #E7EAF1;
+$grey-light: #f5f5f5;
+$blue-dark: #3755A1;
+$blue: rgb(51,121,183);
+$white: #fff;
+
+/* Add here all your css styles (customizations) */
+body {
+  color: $blue-dark;
+  .btn{
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn-red {
+    color: $red;
+    border-color: $red;
+    background-color: inherit;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+  .top-nav-collapse {
+    /* Customize the look and feel of the collapsed top nav here */
+    box-shadow: 0 0 100px #b5b5b5;
+    padding: 12px 0;
+  }
+  .navbar-brand {
+    padding: 0px 0px;
+    .logo {
+      height: 40px;
+    }
+  }
+  .panel {
+    margin-bottom: 0px;
+    border:none;
+    .panel-info {
+      border-color: $grey;
+      background-color: $grey;
+      box-shadow: none;
+    }
+  }
+  .form-control {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .content-sm {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .content-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  i.icon-red {
+    background: #fff;
+    color: $red;
+    border-color: transparent;
+    font-size: 280px;
+    padding:3px;
+    &:hover {
+      color: #ff694e;
+    }
+  }
+  i.icon-bg-white {
+    color: #fff;
+    font-size: 280px;
+    border-color: transparent;
+  }
+  /*                                                                                      jumbotron */
+  .jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/jumbotron-bg.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color:#fff;
+    .jumbotron-overlay {
+      background: linear-gradient(rgba(0, 92, 169, 0.6), rgba(0, 92, 169, 0.6));
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 4;
+    }
+    .jumbotron-text {
+      padding-top: 300px;
+
+      text-align: center;
+    }
+    .btn-u.btn-brd.btn-u-light {
+      margin: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+  /*                                                                                      bg-grey */
+  .bg-grey {
+    background: $grey;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    h4 {
+      color:$red;
+      font-size: 15px;
+    }
+    h5 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h3 {
+      font-size: 22px;
+      padding-bottom: 15px;
+    }
+    .title-v1 {
+      margin-bottom: 30px;
+      h1, h2 {
+        color: $red;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+      }
+    }
+    ul {
+      padding-left: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .btn-red {
+      color: $red;
+      border-color: $red;
+      background-color: inherit;
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+    }
+    hr {
+      height: 2px;
+      /* Set the hr color */
+      color: #fff; /* old IE */
+      background-color: #fff; /* Modern Browsers */
+    }
+  }
+
+  /*                                                                                      bg-white */
+  .bg-white {
+    text-align: center;
+    .title-v1 {
+      margin-bottom: 30px;
+      h1, h2 {
+        color: $red;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  /*                                                                                      bg-blue */
+  .bg-blue {
+    background: $blue;
+    color: #fff;
+    .panel-heading {
+      h1, h2 {
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+
+  /*                                                                                      bg-red */
+  .bg-red {
+    background: $red-bg;
+    color: #fff;
+    .panel-heading {
+      h1, h2 {
+        color: #fff;
+        text-align: left;
+      }
+    }
+    ul.list-unstyled {
+      li {
+        margin: 0 0 0 0;
+      }
+    }
+    a{
+      color: white;
+    }
+  }
+  /*                                                                                      modal */
+  .modal {
+    .modal-header {
+      background-color: $blue;
+      padding-left: 35px;
+      h4 {
+        color: #fff;
+      }
+    }
+    .well {
+      box-shadow: none;
+      border: none;
+      margin-bottom: 0px;
+      form {
+        .form-control {
+          border: none;
+        }
+        textarea {
+          height: 200px;
+        }
+      }
+    }
+    .modal-body {
+      background-color: $grey-light;
+      .btn-default{
+        margin-top: 35px;
+        margin-bottom: 30px;
+        color: $grey-dark;
+        border: 1px solid $grey-dark;
+      }
+    }
+  }
+  .copyright-section {
+    padding-left: 30px;
+  }
+}
+
+
+/*                                                                                      references carousel */
+img.swisscom {
+  width:120px;
+  height: auto;
+}
+
+img.allianz {
+  padding-top: 20px;
+  width:280px;
+  height: auto;
+}
+
+.carousel {
+  padding-top: 45px;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  color: $red;
+  font-size: 100px;
+  opacity: 100;
+  text-shadow: none;
+}
+
+.accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family:'FontAwesome';
+  content:"\f00d";
+  float: right;
+  color: inherit;
+  font-size: 28px;
+}
+.panel-heading.collapsed .accordion-toggle:after {
+  /* symbol for "collapsed" panels */
+  content:"\f0c9";
+}
+
+

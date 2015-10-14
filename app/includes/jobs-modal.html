@@ -1,0 +1,51 @@
+<!-- Jobs Section Modal-->
+<div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="jobsModalLabel" aria-hidden="true" ng-controller="jobsModalCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <i class="fa fa-envelope"></i> Bewerben
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="well">
+                    <div class="job-name blue"></div>
+                    <div class="job-id blue"></div>
+                </div>
+                <div class="well">
+                    <form>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="anrede" placeholder="Anrede*">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="title" placeholder="Titel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vorname" placeholder="Vorname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nachname" placeholder="Nachname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="telephone-number" placeholder="Telefonnumer">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text" placeholder="Ihr Anschreiben"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-default btn-lg btn-block">Vita anhängen</button>
+                    <button type="button" class="btn btn-red btn-lg btn-block">Senden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jobs Section Modal End-->

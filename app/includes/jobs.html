@@ -1,0 +1,68 @@
+<!-- Jobs Section -->
+<section id="jobs" ng-controller="jobsCtrl">
+    <div class="bg-grey">
+        <div class="container content-sm">
+            <div class="title-v1">
+                <h2>Jobs</h2>
+            </div>
+            <h3>IT-Talente gesucht!</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Bei e-nov8 sprechen wir Technik. Denn wir sind IT-Spezialisten. <br />
+                        Wir legen Wert auf Teamwork gepaart mit hoher Eigenverantwortung. <br />
+                    </p>
+                    <p>Wir sind immer auf der Suche nach jungen Talenten und erfahrenen IT Spezialisten.</p>
+                </div>
+                <div class="col-md-6">
+                    „e-nov8 has exciting and challenging projects. I like the team spirit – no politics“ <br />
+                    <small>(Jason, software architect)</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-blue">
+        <div class="container content-sm">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Aktuelle Stellenangebote bei e-nov8</p>
+                    <input type="text" class="form-control" id="anrede" placeholder="Suche">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-grey">
+        <div class="container content-xs">
+            <div class="panel-group acc-v1 accordion" id="accordion">
+                <div class="panel panel-default" ng-repeat="job in items">
+                    <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#{{job.id}}">
+                        <a href="">
+                            <h5 class="panel-title accordion-toggle">
+                                {{ job.title }}
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="{{job.id}}" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                        {{ job.description}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <a href="#jobs" type="button" class="btn btn-default btn-red" data-toggle="modal" data-target="#jobsModal" data-job-name="{{ job.title }}" data-job-id="{{job.id}}">Jetz Bewerben</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>enov8 Stellen auf:
+                <i class="fa fa-linkedin-square"></i> LinkedIn
+                <i class="fa fa-xing-square"></i> Xing
+                Freelancer Map
+            </p>
+        </div>
+    </div>
+</section>
+<!-- End Jobs Section -->
