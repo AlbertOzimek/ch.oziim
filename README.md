@@ -1,4 +1,11 @@
 #Installation
+
+### Install sass and compass
+sudo gem install -n /usr/local/bin sass
+sudo gem install -n /usr/local/bin compass
+
+
+
 git clone https://Albert@e-nov8.ch/tc/stash/scm/hp/ch.enov8.hp.git
 
 checkout the branch includes - check the command online
