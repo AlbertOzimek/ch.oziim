@@ -5,6 +5,12 @@ sudo gem install -n /usr/local/bin sass
 sudo gem install -n /usr/local/bin compass
 
 
+### Runing the server
+
+grunt serve
+grunt build
+grunt serve:dist
+
 
 git clone https://Albert@e-nov8.ch/tc/stash/scm/hp/ch.enov8.hp.git
 
