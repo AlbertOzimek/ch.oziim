@@ -1,8 +1,13 @@
 {
-  "name": "oleg",
+  "name": "oziim",
   "version": "0.0.0",
+  "description": "oziim.com",
+  "author": "Albert Ozimek",
   "dependencies": {},
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aozimek/ch.oziim.git"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
